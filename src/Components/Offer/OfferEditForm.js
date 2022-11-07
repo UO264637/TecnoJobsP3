@@ -1,7 +1,7 @@
 import React from 'react';
 import withRouter from '../withRouter';
 import { Button, InputNumber, Form, Input } from 'antd';
-import { Card, Tag, Result } from 'antd';
+import { Card, Tag, Result, Row, Col } from 'antd';
 import { useState, useEffect, useRef } from "react";
 import { useParams } from 'react-router-dom';
 
@@ -157,6 +157,8 @@ class OfferEditForm extends React.Component {
     }
     let space = " ";
     return (
+      <Row justify="center">
+      <Col xs={24} sm={24} md={18} lg={16} xl={14}>
       <Card>
         <Form name="basic" labelCol={ {span: 24/3} } wrapperCol={{ span: 24/3}} 
           size="Large"
@@ -227,6 +229,8 @@ class OfferEditForm extends React.Component {
           </Form.Item>
         </Form>
       </Card>
+      </Col>
+      </Row>
     )
   }
 }

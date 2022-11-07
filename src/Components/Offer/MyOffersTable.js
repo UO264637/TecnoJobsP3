@@ -4,7 +4,7 @@ import { Table, Col, Row } from 'antd';
 import { notification } from 'antd';
 import { Form, Input, Popconfirm, Tag } from 'antd';
 import { useContext, useEffect, useRef, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 const EditableContext = React.createContext(null);
 const EditableRow = ({ index, ...props }) => {
@@ -232,7 +232,7 @@ export default function MyOffersTable(props) {
         dataSource.length >= 1 ? (
           <div>
           <Button type="link" onClick={() => handleDelete(record.key)} >Delete</Button>
-          <Button type="link" href={"/edit/offer/"+record.id}>Edit</Button>
+          <Link to={"/edit/offer/"+record.id}><Button type="link">Edit</Button></Link>
           <Button type="link" onClick={() => handleHighlight(record.key)} >Highlight</Button>
           </div>
         ) : null,
