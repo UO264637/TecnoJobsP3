@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/TecnoJobsP3/static/css/main.3ba11a60.css",
+    "main.js": "/TecnoJobsP3/static/js/main.2982d57b.js",
+    "static/media/logo.png": "/TecnoJobsP3/static/media/logo.d4be0af496c5b932fd07.png",
+    "index.html": "/TecnoJobsP3/index.html",
+    "main.3ba11a60.css.map": "/TecnoJobsP3/static/css/main.3ba11a60.css.map",
+    "main.2982d57b.js.map": "/TecnoJobsP3/static/js/main.2982d57b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3ba11a60.css",
+    "static/js/main.2982d57b.js"
+  ]
+}
